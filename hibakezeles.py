@@ -11,10 +11,13 @@ else:
 finally:
     print("Ez a vége")
 
-try:
-    szam=int(input("Kérek egy számoz :"))
-except:
-    pass
-
-
+szam=""
+while szam=="":
+    try:
+        szam=int(input("Kérek egy számoz: "))
+    except ValueError as e:
+        print(e)
+        print("Ez nem szám!")            
+    except ValueError:
+        print("Ismeretlen hiba")
 print(szam)
