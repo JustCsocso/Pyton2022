@@ -18,9 +18,40 @@ def egyenlet(a,b,c):
     return szoveg
     
 
-
-
-
+def gyökTényezőSszorzat(a,x1,x2):
+    if x1=="":
+        return "Nincs gyöktényezős alak."
+    elif x1==x2:
+        if x1<0:
+            return str(a)+"(x + "+str(-1*x1) +")²"
+        elif x1>0:
+            return str(a)+"(x - "+str(-1*x1) +")²"
+        else:    
+            return str(a)+"x²"
+    else:
+        if x1<0:
+            if x2<0:
+                return str(a)+"(x + "+str(-1*x1) +")(x + "+str(-1*x2) +")"
+            elif x2>0:
+                return str(a)+"(x + "+str(-1*x1) +")(x - "+str(-1*x2) +")"
+            else:
+                return str(a)+"(x + "+str(-1*x1) +")x"
+        elif x1>0:
+            if x2<0:
+                return str(a)+"(x - "+str(-1*x1) +")(x + "+str(-1*x2) +")"
+            elif x2>0:
+                return str(a)+"(x - "+str(-1*x1) +")(x - "+str(-1*x2) +")"
+            else:
+                return str(a)+"(x - "+str(-1*x1) +")x"
+        else:
+            if x2<0:
+                return str(a)+"x(x + "+str(-1*x2) +")"
+            elif x2>0:
+                return str(a)+"x(x - "+str(-1*x2) +")"            
+            
+                
+                
+        
 
 
 
@@ -52,7 +83,10 @@ else:
 #gyök=math.sqrt(1)
 #print(gyok)
 print(egyenlet(a,b,c))
+
 #a*(x-x1)*(x-x2)=0
+
+print(gyökTényezőSszorzat)
 print(a)
 print(x1)
 print(x2)
