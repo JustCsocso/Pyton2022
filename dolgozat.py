@@ -48,6 +48,15 @@ lista=szoveg.split(" ")
 lista.reverse()
 szoveg2="".join(lista)
 print(szoveg2)
+#print("ade"*5)
+
+#9.feladat: Az eltárolt szövegből töröld az összes írásjelet!
+jelek="'.!?-:;,"
+
+for i in range(len(jelek)):
+    szoveg=szoveg.replace(jelek[i],"")
+print(szoveg)
+
 
 
 
