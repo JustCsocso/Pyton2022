@@ -1,5 +1,27 @@
 import math 
 
+def egyenlet(a,b,c):
+    szoveg="0 = "
+    if a!=0:
+        szoveg+=str(a)+"x²"
+            
+    if b>0:
+        szoveg+=" + "+str(b)+"x"
+    elif b<0:
+        szoveg+="  "+str(b)+"x"
+
+    if c>0:
+        szoveg+=" + "+str(c)
+    elif c<0:
+        szoveg+="  "+str(c)
+
+    return szoveg
+    
+
+        
+
+        
+
 #a*X2+b*x+c
 
 a = int(input("a="))
@@ -21,4 +43,11 @@ else:
 
 #gyok=math.sqrt(1)
 #print(gyok)
+print(egyenlet(a,b,c))
+
+
+
+
+
+
 
