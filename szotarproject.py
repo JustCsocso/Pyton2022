@@ -1,5 +1,7 @@
 import random
 
+#Ez a függvény bekér egy szót, és annak jelentését.
+#Visszaad: a két bekérés listában
 def szoBeker():
     szo=input("Kérek egy szót: ")
     if szo=="":
@@ -17,9 +19,31 @@ def sokBeker():
         
     return szavak
 
-print(sokBeker())
 
 def filebaIr(lista):
     f=open("szotar.txt","a")
 
+    for e in lista:
+        #print(e)
+        f.write(" ".join(e))
+        f.write("\n")
+
+        
     f.close()
+
+kerdesek=[]
+def beolvas():
+    f=open("szotar.txt","r")
+    for sor in f:
+        #apple alma
+        kerdesek.append(sor.replace("\n","").split(" "))
+    f.close()
+
+
+def kerdez():
+    print(kerdesek)
+    
+beolvas()
+kerdez()
+#szavak=sokBeker()
+#filebaIr(szavak)
