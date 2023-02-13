@@ -74,10 +74,26 @@ for e in valaszok:
 print("A feladatra {0} fő, a versenyzők {1:.2%}-a adott helyes választ.".format(db,db/len(valaszok)))
 
 f=open("pontok.txt","w")
+eredmenyek=[]
 for e in valaszok:
     pont=pontSzamit(e[1],helyes)
     f.write(e[0]+" "+str(pont)+"\n")
-
+    eredmenyek.append([pont,e[0]])
 
 f.close()
+
+#eredmenyek.sort()
+#eredmenyek.reverse()
+#print(eredmenyek[:10])
+
+
+csakPontok={}
+for e in eredmenyek:
+    csakPontok.add(e[0])
+print(list(csakPontok)[-3::]
+
+
+
+
+
 
