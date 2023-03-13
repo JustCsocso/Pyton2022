@@ -1,3 +1,15 @@
+def oszlopVissza(hanyadik):
+    oszlop=[]
+    for e in tabla:
+        oszlop.append(e[hanyadik-1])
+    return oszlop
+
+
+
+
+    
+
+
 gyumolcsok=["alma","szőlő","körte","barac","dragonfruit","licsi"]
 
 print("Ennyi gyümölcs van: {}".format(len(gyumolcsok)))
@@ -87,3 +99,24 @@ print(paros)
 masolat=gyumolcsok
 masolat.reverse()
 print(", ".join(gyumolcsok[::-1]))
+
+
+tabla=[]
+for i in range(20):
+    sor=[]
+    for k in range(10):
+        sor.append((i+1)*(k+1))
+    tabla.append(sor)
+
+print(tabla)
+
+        
+oszlop=[]
+for e in tabla:
+    oszlop.append(e[0])
+
+print(oszlop)
+print(oszlopVissza(5))
+print(oszlopVissza(10))
+
+
