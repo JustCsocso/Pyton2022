@@ -6,7 +6,11 @@ def oszlopVissza(hanyadik):
 
 
 
+def visszaAdó(hanyadik):
+    oszlop=[e[hanyadik-1::hanyadik] for e in tabla]
+    return oszlop
 
+        
     
 
 
@@ -118,5 +122,23 @@ for e in tabla:
 print(oszlop)
 print(oszlopVissza(5))
 print(oszlopVissza(10))
+
+oszlop=[e[:3] for e in tabla]
+oszlop=[e[4:7] for e in tabla]
+oszlop=[e[1::2] for e in tabla]
+oszlop=[e[3::4] for e in tabla]
+
+print(oszlop)
+
+
+#függ: megadjá hogy hánnyal osztható oszlopokat adja vissza
+#bekérés, ami bekér egy számot ami azt annyival osztható számokat íratja ki.
+
+#print(visszaAdó(int(input("Kérek egy számot: "))))
+
+#3,7,1 bekerül
+
+oszlop=[[e[2],e[6],e[0]] for e in tabla]
+print(oszlop)
 
 
