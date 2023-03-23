@@ -1,7 +1,13 @@
 #nevek=[]
 #for e in nevek:
 
+
+ora=1
+while ora!=:
+    print("Ilyne nem ovclt")
+
 ora=input("Kérek egy órát: ")
+
 if ora=="1":
     print("Ötletelés elkezdése, illetve első fájl létrehozása, ami a szám kitalálós volt")
 
@@ -57,6 +63,32 @@ if ora=="7":
     if nevek=="Laci":
         print("Kibővített programjának folytatása")
     elif nevek =="Csongi":
-        print("")
+        print("Először egy trellohoz hasonló programot gondolt ki ami ez a fálj lett")
+    elif nevek =="Martin":
+        print("Számlálós játék kibővitett változatának a folytatása")
+
+
+if ora=="8":
+    nevek=input("Kérek egy nevet: ")
+    if nevek=="Laci":
+        print("Egy fájlkezelős programot talált ki, ami a")
+    elif nevek =="Csongi":
+        print("Először egy trellohoz hasonló programot gondolt ki ami ez a fálj lett")
+    elif nevek =="Martin":
+        print("Számlálós játék kibővitett változatának a folytatása")
+if ora=="7":
+    nevek=input("Kérek egy nevet: ")
+    if nevek=="Laci":
+        print("Kibővített programjának folytatása")
+    elif nevek =="Csongi":
+        print("Először egy trellohoz hasonló programot gondolt ki ami ez a fálj lett")
+    elif nevek =="Martin":
+        print("Számlálós játék kibővitett változatának a folytatása")
+if ora=="7":
+    nevek=input("Kérek egy nevet: ")
+    if nevek=="Laci":
+        print("Kibővített programjának folytatása")
+    elif nevek =="Csongi":
+        print("Először egy trellohoz hasonló programot gondolt ki ami ez a fálj lett")
     elif nevek =="Martin":
         print("Számlálós játék kibővitett változatának a folytatása")
