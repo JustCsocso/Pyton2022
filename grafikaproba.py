@@ -16,11 +16,11 @@ canvas.pack(fill=BOTH, expand=1)
 
 # Add a line in canvas widget
 canvas.create_line(100,100,300,100, fill="green", width=5)
-canvas.create_line(300,100,300,300, fill="green", width=5)
+canvas.create_line(300,100,100,20, fill="green", width=5)
 canvas.create_line(300,300,100,300, fill="green", width=5)
 canvas.create_line(100,300,100,100, fill="green", width=5)
 
-canvas.create_line(500,500,400,50, fill="red", width=5)
+#canvas.create_line(500,500,400,50, fill="red", width=5)
 
 
 win.mainloop()
