@@ -1,0 +1,2 @@
+import haromszog
+haromszog.haromszog()
